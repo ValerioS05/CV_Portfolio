@@ -19,6 +19,22 @@ body {
 main {
   flex: 1;
 }
+
+/*Navbar style*/
+
+#prof {
+  height: 70px;
+  width: auto;
+  border-radius: 30%;
+  box-shadow: 0 0 5px 0;
+  transition: 0.5s;
+}
+
+#prof:hover {
+  box-shadow: 0 0 10px 0;
+  transition: 0.5s;
+}
+
 /*Footer style*/
 footer {
     margin: 0 auto;

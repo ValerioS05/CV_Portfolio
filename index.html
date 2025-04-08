@@ -10,12 +10,12 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="CSS/styles.css" />
-    <script type="text/javascript" src="JS/main.js"></script>
+    <link rel="stylesheet" href="./assets/CSS/styles.css" />
+    <script type="text/javascript" src="./assets/JS/main.js"></script>
   </head>
   <body>
     <header>
-        <!--
+      <!--
         Navbar bootstrap 4 with dropdown.
         Contains:
             - navbar-brand -> used as image and also links to about.html.
@@ -24,7 +24,12 @@
             - dropdown listing a quick connection to my projects. 
         -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Profile img</a>
+        <a class="navbar-brand" href="about.html"
+          ><img
+            id="prof"
+            src="./assets/media/profile.jpg"
+            alt="My Profile Image"
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -45,8 +50,8 @@
               ></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="projects.html">Projects Page</a>
-              </li>
+              <a class="nav-link" href="projects.html">Projects Page</a>
+            </li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -60,12 +65,36 @@
                 Projects Links
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">P1</a>
-                <a class="dropdown-item" href="#">P2</a>
-                <a class="dropdown-item" href="#">P3</a>
-                <a class="dropdown-item" href="#">P4</a>
-                <a class="dropdown-item" href="#">P5</a>
-
+                <a
+                  class="dropdown-item"
+                  href="https://valerios05.github.io/pj1nuraghe/"
+                  target="_blank"
+                  >Nuraghe's</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="https://valerios05.github.io/pj2Quizzer/"
+                  target="_blank"
+                  >Quizzer</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="https://tradehub-pj3-abd458db728b.herokuapp.com/"
+                  target="_blank"
+                  >TradeHub</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="https://nestbite-5dd11ab0ac7f.herokuapp.com/"
+                  target="_blank"
+                  >NestBite</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="https://head2head-22b839c8291c.herokuapp.com/"
+                  target="_blank"
+                  >Head2Head</a
+                >
               </div>
             </li>
             <li class="nav-item">
@@ -74,8 +103,11 @@
           </ul>
         </div>
       </nav>
-      <h1>My portfolio</h1>
-      <p>Intro and details of this portfolio</p>
+      <div id="intro-cont">
+        <h1>Hi, I'm Valerio ,a Junior Full-Stack Web Developer</h1>
+        <p>Passionate about building sleek, functional websites from the ground up. I love turning ideas into great experiences using modern tools and beyond.
+            Explore my projects and let's create something awesome together.</p>
+      </div>
     </header>
     <main>
       <div class="proj-cont">
