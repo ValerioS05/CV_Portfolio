@@ -24,12 +24,3 @@ footer {
     margin: 0 auto;
     padding: 10px;
 }
-/*Navbar style*/
-#navbar {
-    padding: 10px;
-    margin: 0 auto;
-}
-
-#navbar a:hover {
-    color: green;
-}
