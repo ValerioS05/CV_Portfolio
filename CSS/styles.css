@@ -1,0 +1,35 @@
+/*General normalize */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Body style 
+    - Maximum height for viewport
+    - Flex display with column direction
+*/
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/* Main style:
+    - Makes the main take as much space as available
+*/
+main {
+  flex: 1;
+}
+/*Footer style*/
+footer {
+    margin: 0 auto;
+    padding: 10px;
+}
+/*Navbar style*/
+#navbar {
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#navbar a:hover {
+    color: green;
+}
