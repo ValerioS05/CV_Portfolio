@@ -35,6 +35,47 @@ main {
   transition: 0.5s;
 }
 
+/*Header styles*/
+#intro-cont {
+  text-align: center;
+  padding: 20px;
+  margin: 30px;
+}
+
+
+/*Main Styles*/
+/*Skills section*/
+#skills-cont{
+  text-align: center;
+}
+
+#skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#skills-1{
+  text-align: center;
+}
+#skills div{
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+}
+
+/*Projects section*/
+
+#proj-cont{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.proj-div {
+  margin: 1.1rem;
+}
 /*Footer style*/
 footer {
     margin: 0 auto;
