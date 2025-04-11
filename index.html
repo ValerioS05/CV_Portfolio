@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Valerio S. Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -23,7 +29,7 @@
             - links to all pages.
             - dropdown listing a quick connection to my projects. 
         -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="about.html"
           ><img
             id="prof"
@@ -39,18 +45,21 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span><i class="fa-solid fa-bars"></i></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               <a class="nav-link" href="index.html"
-                >Home <span class="sr-only"></span
+                ><i class="fa-solid fa-house"></i> Home
+                <span class="sr-only"></span
               ></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="projects.html">Projects Page</a>
+              <a class="nav-link" href="projects.html"
+                ><i class="fa-solid fa-briefcase"></i> Projects Page</a
+              >
             </li>
             <li class="nav-item dropdown">
               <a
@@ -62,158 +71,209 @@
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                Projects Links
+                <i class="fa-solid fa-arrows-turn-right"></i> Projects Links
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a
                   class="dropdown-item"
                   href="https://valerios05.github.io/pj1nuraghe/"
                   target="_blank"
-                  >Nuraghe's</a
-                >
+                  ><strong>Nuraghe's </strong>-<i
+                    class="fa-brands fa-html5"
+                  ></i>
+                  - <i class="fa-brands fa-css"></i
+                ></a>
                 <a
                   class="dropdown-item"
                   href="https://valerios05.github.io/pj2Quizzer/"
                   target="_blank"
-                  >Quizzer</a
-                >
+                  ><strong>Quizzer</strong> - <i class="fa-brands fa-js"></i
+                ></a>
                 <a
                   class="dropdown-item"
                   href="https://tradehub-pj3-abd458db728b.herokuapp.com/"
                   target="_blank"
-                  >TradeHub</a
-                >
+                  ><strong>TradHub</strong> - <i class="fa-brands fa-python"></i
+                ></a>
                 <a
                   class="dropdown-item"
                   href="https://nestbite-5dd11ab0ac7f.herokuapp.com/"
                   target="_blank"
-                  >NestBite</a
+                  ><strong>NestBite</strong> - Full-stack</a
                 >
                 <a
                   class="dropdown-item"
                   href="https://head2head-22b839c8291c.herokuapp.com/"
                   target="_blank"
-                  >Head2Head</a
-                >
+                  ><strong>Head2Head</strong> - Full-stack,
+                  <i class="fa-brands fa-react"></i
+                ></a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About me</a>
+              <a class="nav-link" href="about.html"
+                ><i class="fa-solid fa-address-card"></i> About me</a
+              >
             </li>
           </ul>
         </div>
       </nav>
-        <div id="intro-cont">
-          <h1>Hi, I'm Valerio — a Junior Full-Stack Web Developer</h1>
-          <p>
-            I craft modern, user-friendly websites and web apps using tools across the full stack.
-            From responsive frontends to scalable backends, I love building clean solutions that solve real problems.<br>
-            Check out my projects and let's build something awesome together.
-          </p>
+      <div id="intro-cont">
+        <h1>Valerio's Portfolio</h1>
+        <p>
+          Hi, I'm
+          <a
+            href="https://www.linkedin.com/in/valerios05/"
+            target="_blank"
+            rel="noopener"
+            >Valerio</a
+          >, a <strong>Junior Full-Stack Web Developer</strong>,<br />
+          I craft modern, user friendly websites and web apps using tools across
+          the full stack. From responsive frontends to scalable backends, I love
+          building clean solutions that solve real problems.<br />
+          Check out my projects and let's build something awesome together.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <div id="skills-cont">
+        <h4>Skills & Technologies</h4>
+      </div>
+
+      <div id="skills" class="grid-skills">
+        <div>
+          <h5>HTML & CSS</h5>
+          <p>Semantic structure and modern layouts</p>
         </div>
-      </header>
-      
-      <main>
-        <div id="skills-cont">
-          <h3>Skills & Technologies</h3>
-          <p>Here are some of the tools and languages I've worked with:</p>
+        <div>
+          <h5>JavaScript</h5>
+          <p>Vanilla JS, DOM manipulation, dynamic interfaces</p>
         </div>
-      
-        <div id="skills" class="grid-skills">
-          <div>
-            <h5>HTML & CSS</h5>
-            <p>Semantic structure and modern layouts</p>
-          </div>
-          <div>
-            <h5>JavaScript</h5>
-            <p>Vanilla JS, DOM manipulation, dynamic interfaces</p>
-          </div>
-          <div>
-            <h5>Python</h5>
-            <p>Backend logic, scripting, and data processing</p>
-          </div>
-          <div>
-            <h5>Django</h5>
-            <p>Full-featured backend framework with REST API support</p>
-          </div>
-          <div>
-            <h5>DRF (Django REST Framework)</h5>
-            <p>Building scalable, secure REST APIs</p>
-          </div>
-          <div>
-            <h5>SQL / PostgreSQL / MySQL</h5>
-            <p>Database design and queries</p>
-          </div>
-          <div>
-            <h5>JSX</h5>
-            <p>Writing dynamic UIs with React-style syntax</p>
-          </div>
-          <div>
-            <h5>Heroku</h5>
-            <p>Deploying full-stack apps and APIs</p>
-          </div>
+        <div>
+          <h5>Python</h5>
+          <p>Backend logic, scripting, and data processing</p>
         </div>
-      
-        <div id="skills-1">
-          <h4>Currently Learning & Growing</h4>
-          <p>
-            I'm continuously improving my skills in modern JavaScript frameworks (like React),<br>
-            deployment pipelines, API integration, and clean code best practices.<br> Open to learning new stacks and tools that bring ideas to life.
-          </p>
+        <div>
+          <h5>Django</h5>
+          <p>Full-featured backend framework with REST API support</p>
         </div>
-      </main>
-      
+        <div>
+          <h5>DRF (Django REST Framework)</h5>
+          <p>Building scalable, secure REST APIs</p>
+        </div>
+        <div>
+          <h5>SQL / PostgreSQL / MySQL</h5>
+          <p>Database design and queries</p>
+        </div>
+        <div>
+          <h5>JSX</h5>
+          <p>Writing dynamic UIs with React-style syntax</p>
+        </div>
+        <div>
+          <h5>Heroku</h5>
+          <p>Deploying full-stack apps and APIs</p>
+        </div>
+      </div>
+
+      <div id="skills-1">
+        <h4>Currently Learning & Growing</h4>
+        <p>
+          I'm continuously improving my skills in modern JavaScript frameworks
+          (like React),<br />
+          deployment pipelines, API integration, and clean code best
+          practices.<br />
+          Open to learning new stacks and tools that bring ideas to life.
+        </p>
+      </div>
       <div id="proj-sec-cont">
-      <div id="proj-cont">
-        <div class="proj-div">
-          <h5>Project 1</h5>
-          <a href="https://valerios05.github.io/pj1nuraghe/"
-          target="_blank">Nuraghe's</a>
-          <img class="proj-icon" src="./assets/media/nuraicon.png" alt="Nuraghe's icon" />
+        <div id="proj-cont">
+          <div class="proj-div">
+            <a href="https://valerios05.github.io/pj1nuraghe/" target="_blank"
+              >Nuraghe's</a
+            >
+            <img
+              class="proj-icon"
+              src="./assets/media/nuraicon.png"
+              alt="Nuraghe's icon"
+            />
+          </div>
+          <div class="proj-div">
+            <a href="https://valerios05.github.io/pj2Quizzer/" target="_blank"
+              >Quizzer</a
+            >
+            <img
+              class="proj-icon"
+              src="./assets/media/quizicon.png"
+              alt="Quizzer icon"
+            />
+          </div>
+          <div class="proj-div">
+            <a
+              href="https://tradehub-pj3-abd458db728b.herokuapp.com/"
+              target="_blank"
+              >TradeHub</a
+            >
+            <img
+              class="proj-icon"
+              src="./assets/media/tradeicon.png"
+              alt="TradeHub icon"
+            />
+          </div>
+          <div class="proj-div">
+            <a
+              href="https://nestbite-5dd11ab0ac7f.herokuapp.com/"
+              target="_blank"
+              >NestBite</a
+            >
+            <img
+              class="proj-icon"
+              src="./assets/media/nesticon.png"
+              alt="Nestbite icon"
+            />
+          </div>
+          <div class="proj-div">
+            <a
+              href="https://head2head-22b839c8291c.herokuapp.com/"
+              target="_blank"
+              >Head2Head</a
+            >
+            <img
+              class="proj-icon"
+              src="./assets/media/h2hicon.png"
+              alt="Head2Head icon"
+            />
+          </div>
         </div>
-        <div class="proj-div">
-          <h5>Project 2</h5>
-          <a href="https://valerios05.github.io/pj2Quizzer/"
-          target="_blank"
-          >Quizzer</a>
-          <img class="proj-icon" src="./assets/media/quizicon.png" alt="Quizzer icon" />
-        </div>
-        <div class="proj-div">
-          <h5>Project 3</h5>
-          <a href="https://tradehub-pj3-abd458db728b.herokuapp.com/"
-          target="_blank"
-          >TradeHub</a>
-          <img class="proj-icon" src="./assets/media/tradeicon.png" alt="TradeHub icon" />
-        </div>
-        <div class="proj-div">
-          <h5>Project 4</h5>
-          <a href="https://nestbite-5dd11ab0ac7f.herokuapp.com/"
-          target="_blank"
-          >NestBite</a>
-          <img class="proj-icon" src="./assets/media/nesticon.png" alt="Nestbite icon" />
-        </div>
-        <div class="proj-div">
-          <h5>Project 5</h5>
-          <a href="https://head2head-22b839c8291c.herokuapp.com/"
-          target="_blank"
-          >Head2Head</a>
-          <img class="proj-icon" src="./assets/media/h2hicon.png" alt="Head2Head icon" />
+        <div id="cert-cont">
+          <a
+            href="https://www.credential.net/417127e1-030b-4242-aac4-40f60036a66d#acc.2zsnm8VY"
+            target="_blank"
+          >
+            <img
+              id="certificate"
+              src="./assets/media/certificate.png"
+              alt="My Diploma"
+            />
+          </a>
         </div>
       </div>
-      <div id="cert-cont">
-        <a href="https://www.credential.net/417127e1-030b-4242-aac4-40f60036a66d#acc.2zsnm8VY"
-         target="_blank">
-         <img id="certificate" src="./assets/media/certificate.png" alt="My Diploma" />
-        </a>
-      </div>
-    </div>
     </main>
     <footer>
-      <div>
-        <span>Copyright</span>
-        <span>Author</span>
-        <span>Logo/image</span>
-        <span>Contacts</span>
+      <div id="contacts">
+        <ul id="cont-list">
+          <li>
+            <i class="fa-brands fa-linkedin"></i>
+            <a
+              href="https://www.linkedin.com/in/valerios05/"
+              target="_blank"
+              rel="noopener"
+              >Valerios05</a
+            >
+          </li>
+          <li>© <a href="about.html">Valerio Solinas</a> 2025</li>
+          <li><i class="fa-solid fa-envelope"></i> Valerius92@live.it</li>
+        </ul>
       </div>
     </footer>
   </body>
@@ -230,6 +290,10 @@
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://kit.fontawesome.com/65d1820b19.js"
     crossorigin="anonymous"
   ></script>
 </html>

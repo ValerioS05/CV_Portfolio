@@ -13,11 +13,32 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  font-family: "Titillium Web";
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Jura";
+  color: darkgreen;
+  font-weight: 800;
+}
+h1 {
+  font-size: 2.2rem;
 }
 img {
   max-width: 100%;
   height: auto;
 }
+a {
+  color: darkgreen;
+}
+a,a:hover {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: rgba(48, 165, 12, 0.381);
+  color: black;
+}
+
 /* Main style:
     - Makes the main take as much space as available
 */
@@ -25,12 +46,13 @@ main {
   flex: 1;
 }
 
-/*Navbar style*/
 header {
   width: 100%;
   padding: 0;
   margin: 0;
 }
+
+/*Navbar style*/
 
 div.dropdown-menu {
   padding: 0px;
@@ -38,6 +60,11 @@ div.dropdown-menu {
   max-width: 300px;
   box-sizing: border-box;
   position: absolute;
+}
+
+.dropdown-menu a:hover, .dropdown-menu a:focus {
+  color: darkgreen;
+  background-color: rgba(150, 250, 120, 0.15);
 }
 /*Profile image*/
 #prof {
@@ -57,13 +84,32 @@ div.dropdown-menu {
 /*Header styles*/
 #intro-cont {
   text-align: center;
+  margin:20px 0;
+  border-bottom: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
+#intro-cont p {
+  margin: 2rem 0;
+}
+#intro-cont a {
+  color: darkgreen;
+  transition: 0.3s;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#intro-cont a:hover {
+  color: darkolivegreen;
+  transition: 0.3s;
+  text-decoration:underline;
+}
 
 /*Main Styles*/
 /*Skills section*/
 #skills-cont{
   text-align: center;
+  margin-top: 20px;
 }
 
 #skills {
@@ -83,7 +129,11 @@ div.dropdown-menu {
 }
 
 /*Projects section in index.html*/
-
+#proj-sec-cont {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px -25px 20px -20px;
+  padding: 10px 0;
+  margin: 10px 0 0 0;
+}
 #proj-cont{
   display: flex;
   flex-wrap: wrap;
@@ -91,8 +141,21 @@ div.dropdown-menu {
   justify-content: center;
 }
 
+#proj-cont a{
+  color: darkgreen;
+  transition: 0.5s;
+  padding: 3px;
+  border-radius: 10px;
+}
+#proj-cont a:hover,
+#proj-cont a:focus{
+  color: black;
+  background-color:rgba(150, 250, 120, 0.365);
+  transition: 0.3s;
+}
+
 .proj-div {
-  margin: 10px;
+  margin: 10px 10px 50px 10px;
 }
 
 .proj-icon {
@@ -110,13 +173,29 @@ div.dropdown-menu {
   width:200px;
   height: 130px;
   margin: 0 auto;
+  border: 5px double black;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 darkgreen;
+  transition: 0.3s;
+}
+
+#certificate:hover,
+#certificate:focus{
+  box-shadow: 0 5px 10px 4px darkgreen;
+  transition: 0.3s;
 }
 /*Footer style*/
 footer {
-    margin: 0 auto;
-    padding: 10px;
+    margin: 0;
+    padding: 5px;
+    color: black;
 }
 
+#cont-list {
+  list-style: none;
+  text-align: center;
+  margin-top: 20px;
+}
 @media screen and (min-width: 700px) {
   #proj-sec-cont{
     display: flex;
