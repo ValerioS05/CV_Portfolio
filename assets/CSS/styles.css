@@ -12,6 +12,11 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
 /* Main style:
     - Makes the main take as much space as available
@@ -21,7 +26,20 @@ main {
 }
 
 /*Navbar style*/
+header {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
 
+div.dropdown-menu {
+  padding: 0px;
+  margin:0px;
+  max-width: 300px;
+  box-sizing: border-box;
+  position: absolute;
+}
+/*Profile image*/
 #prof {
   height: 70px;
   width: auto;
@@ -35,11 +53,10 @@ main {
   transition: 0.5s;
 }
 
+
 /*Header styles*/
 #intro-cont {
   text-align: center;
-  padding: 20px;
-  margin: 30px;
 }
 
 
@@ -55,6 +72,7 @@ main {
   justify-content: center;
   align-items: center;
 }
+
 #skills-1{
   text-align: center;
 }
@@ -64,7 +82,7 @@ main {
   text-align: center;
 }
 
-/*Projects section*/
+/*Projects section in index.html*/
 
 #proj-cont{
   display: flex;
@@ -74,10 +92,41 @@ main {
 }
 
 .proj-div {
-  margin: 1.1rem;
+  margin: 10px;
+}
+
+.proj-icon {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+#cert-cont {
+  display: flex;
+  justify-content: center;
+}
+
+#certificate {
+  width:200px;
+  height: 130px;
+  margin: 0 auto;
 }
 /*Footer style*/
 footer {
     margin: 0 auto;
     padding: 10px;
+}
+
+@media screen and (min-width: 700px) {
+  #proj-sec-cont{
+    display: flex;
+  }
+
+  #cert-cont {
+    width: 30%;
+  }
+
+  #proj-cont{
+    width: 70%;
+  }
 }
