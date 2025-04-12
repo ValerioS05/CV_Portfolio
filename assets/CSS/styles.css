@@ -35,7 +35,6 @@ a,a:hover {
 }
 
 a:hover {
-  background-color: rgba(48, 165, 12, 0.381);
   color: black;
 }
 
@@ -207,5 +206,17 @@ footer {
 
   #proj-cont{
     width: 70%;
+    font-size: 1.5rem;
+  }
+
+  .proj-icon {
+    height: 65px;
+    width: 65px;
+    border-radius: 30%;
+  }
+
+  #certificate {
+    width:350px;
+    height: auto;
   }
 }

@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+      <!--  Head  -->
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Valerio S. Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -13,7 +21,12 @@
     <link rel="stylesheet" href="./assets/CSS/styles.css" />
     <script type="text/javascript" src="./assets/JS/main.js"></script>
   </head>
+      <!--  Body  -->
+
   <body>
+
+      <!--  Header  -->
+
     <header>
       <!--
         Navbar bootstrap 4 with dropdown.
@@ -23,13 +36,17 @@
             - links to all pages.
             - dropdown listing a quick connection to my projects. 
         -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg">
+      <!--  Profile image link  -->
+
         <a class="navbar-brand" href="about.html"
           ><img
             id="prof"
             src="./assets/media/profile.jpg"
             alt="My Profile Image"
         /></a>
+      <!--  Button/Collapse  -->
+
         <button
           class="navbar-toggler"
           type="button"
@@ -39,18 +56,22 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span><i class="fa-solid fa-bars"></i></span>
         </button>
+      <!--  NavLinks - Dropdown  -->
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
             <li class="nav-item active">
-              <a class="nav-link" href="projects.html"
-                >Projects Page<span class="sr-only"></span
+              <a class="nav-link" href="index.html"
+                ><i class="fa-solid fa-house"></i> Home
+                <span class="sr-only"></span
               ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html"
+                ><i class="fa-solid fa-briefcase"></i> Projects Page</a
+              >
             </li>
             <li class="nav-item dropdown">
               <a
@@ -62,63 +83,181 @@
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                Projects Links
+                <i class="fa-solid fa-arrows-turn-right"></i> Projects Links
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a
                   class="dropdown-item"
                   href="https://valerios05.github.io/pj1nuraghe/"
                   target="_blank"
-                  >Nuraghe's</a
-                >
+                  ><strong>Nuraghe's </strong>-<i
+                    class="fa-brands fa-html5"
+                  ></i>
+                  - <i class="fa-brands fa-css"></i
+                ></a>
                 <a
                   class="dropdown-item"
                   href="https://valerios05.github.io/pj2Quizzer/"
                   target="_blank"
-                  >Quizzer</a
-                >
+                  ><strong>Quizzer</strong> - <i class="fa-brands fa-js"></i
+                ></a>
                 <a
                   class="dropdown-item"
                   href="https://tradehub-pj3-abd458db728b.herokuapp.com/"
                   target="_blank"
-                  >TradeHub</a
-                >
+                  ><strong>TradHub</strong> - <i class="fa-brands fa-python"></i
+                ></a>
                 <a
                   class="dropdown-item"
                   href="https://nestbite-5dd11ab0ac7f.herokuapp.com/"
                   target="_blank"
-                  >NestBite</a
+                  ><strong>NestBite</strong> - Full-stack</a
                 >
                 <a
                   class="dropdown-item"
                   href="https://head2head-22b839c8291c.herokuapp.com/"
                   target="_blank"
-                  >Head2Head</a
-                >
+                  ><strong>Head2Head</strong> - Full-stack,
+                  <i class="fa-brands fa-react"></i
+                ></a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About me</a>
+              <a class="nav-link" href="about.html"
+                ><i class="fa-solid fa-address-card"></i> About me</a
+              >
             </li>
           </ul>
         </div>
       </nav>
-      <header>
-        <p>Header</p>
-      </header>
-      
-      <main>
-          <p>About me</p>
+      <!--  Heading and Intro  -->
+
+      <div id="intro-cont">
+        <h1>My Projects</h1>
+        <p>
+          Below is a selection of projects that showcase my progression as a
+          developer,<br />
+          starting from foundational front-end work to full-stack web
+          applications.<br />
+          Each project highlights a different stage of my journey—ranging from
+          static websites built with HTML and CSS,<br />
+          to dynamic interfaces using JavaScript, to back-end logic with Python,
+          and finally,<br />
+          fully integrated solutions using Django, Django REST Framework, and
+          React.<br />
+          These projects reflect my commitment to learning, building, and
+          solving real-world problems with code.
+        </p>
+      </div>
+    </header>
+      <!--  Main Section  -->
+
+    <main>
+      <div id="projects-container">
+        <h4>Projects</h4>
+      </div>
+      <!--  P1  -->
+      <div id="projects" class="projects-divs">
+        <div class="single-proj">
+          <h5>
+            <a href="https://valerios05.github.io/pj1nuraghe/" target="_blank"
+              >Nuraghe's</a
+            >
+          </h5>
+          <div>
+            <a href="https://valerios05.github.io/pj1nuraghe/" target="_blank"
+              ><img src="#"
+            /></a>
+            <p>nuraghes info</p>
+            <div><a href="#">github</a></div>
+      <!--  P2  -->
+          
+          </div>
+        </div>
+        <div class="single-proj">
+          <h5>Quizzer</h5>
+          <div>
+            <img />
+            <a href="https://valerios05.github.io/pj2Quizzer/" target="_blank"
+              >Quizzer</a
+            >
+            <p>quizzer info</p>
+            <div></div>
+          </div>
+        </div>
+      <!--  P3  -->
+
+        <div class="single-proj">
+          <h5>TradeHub</h5>
+          <div>
+            <img />
+            <a
+              href="https://tradehub-pj3-abd458db728b.herokuapp.com/"
+              target="_blank"
+              >TradeHub</a
+            >
+            <p>tradehub info</p>
+            <div></div>
+          </div>
+        </div>
+        <div class="single-proj">
+      <!--  P4  -->
+
+          <h5>NestBite</h5>
+          <div>
+            <img />
+            <a
+              href="https://nestbite-5dd11ab0ac7f.herokuapp.com/"
+              target="_blank"
+              >NestBite</a
+            >
+            <p>nest info</p>
+            <div></div>
+          </div>
+        </div>
+        <div class="single-proj">
+      <!--  P5  -->
+
+          <h5>Head2Head</h5>
+          <div>
+            <img />
+            <a
+              href="https://head2head-22b839c8291c.herokuapp.com/"
+              target="_blank"
+              >Head2Head</a
+            >
+            <p>head2head info</p>
+            <div></div>
+          </div>
+        </div>
+      </div>
     </main>
+
+    <!-- Footer -->
     <footer>
-      <div>
-        <span>Copyright</span>
-        <span>Author</span>
-        <span>Logo/image</span>
-        <span>Contacts</span>
+      <!-- Contacts -->
+      <div id="contacts">
+        <ul id="cont-list">
+          <li>
+      <!--  Linkedin link  -->
+            
+            <i class="fa-brands fa-linkedin"></i>
+            <a
+              href="https://www.linkedin.com/in/valerios05/"
+              target="_blank"
+              rel="noopener"
+              >Valerios05</a
+            >
+          </li>
+      <!-- Copyright email and link to about me page -->
+          
+          <li>© <a href="about.html">Valerio Solinas</a> 2025</li>
+          <li><i class="fa-solid fa-envelope"></i> Valerius92@live.it</li>
+        </ul>
       </div>
     </footer>
   </body>
+      <!-- Scripts -->
   <script
     src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -132,6 +271,10 @@
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://kit.fontawesome.com/65d1820b19.js"
     crossorigin="anonymous"
   ></script>
 </html>
