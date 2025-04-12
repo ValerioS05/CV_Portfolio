@@ -183,6 +183,43 @@ div.dropdown-menu {
   box-shadow: 0 5px 10px 4px darkgreen;
   transition: 0.3s;
 }
+/*-----------------------------------------------------------------------------------*/
+/*Main style Projects page*/
+#proj-head {
+text-align: center;
+margin-bottom: 20px;
+}
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: auto;
+}
+
+.single-proj {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 5px;
+}
+
+.single-proj img {
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 5px 10px darkgreen;
+  margin: 5px;
+  border-radius: 3%;
+  transition: 0.4s;
+  object-fit: cover;
+}
+
+.single-proj img:hover {
+  box-shadow: 0 8px 12px lightgreen;
+  transition: 0.4s;
+}
+/*----------------------------------------------------------------------------------------*/
 /*Footer style*/
 footer {
     margin: 0;
