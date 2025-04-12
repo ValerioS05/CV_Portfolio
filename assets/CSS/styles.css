@@ -191,13 +191,25 @@ margin-bottom: 20px;
 }
 #projects {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  flex-wrap:wrap;
+  justify-content:center;
   text-align: center;
-  height: auto;
+  align-items: baseline;
+  margin: auto;
 }
 
+#projects p {
+  text-align: center;
+  margin-top: 10px;
+  max-width: 200px;
+}
+
+#projects button {
+  width:20px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0 auto;
+}
 .single-proj {
   display: flex;
   flex-direction: column;
