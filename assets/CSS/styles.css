@@ -266,14 +266,15 @@ div.dropdown-menu {
 
 .mySlides img {
   margin-top: 10px;
-  max-width: 370px;
-  max-height: 370px;
-  min-height: 370px;
-  min-width: 370px;
+  max-width: 500px;
+  max-height: 500px;
   object-fit:cover;
-  margin-left: 18%;
+  display: flex;
+  margin: auto;
   border-radius: 50%;
   box-shadow: 0 0 10px;
+  min-height: 500px;
+  min-width: 500px;
 }
 /* Next & previous buttons */
 .prev,
@@ -351,15 +352,19 @@ div.dropdown-menu {
     justify-content: center;
     align-items: center;
     height: auto;
-    min-height: 250px;
+    min-height: 200px;
+    width: 100%;
+    
   }
 
   .mySlides img {
-    width: 100%;
-    height: auto;
-    max-height: 250px;
-    object-fit: contain;
+    max-width: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    min-width: 300px;
+    object-fit: cover;
     margin: auto;
+    display: flex;
   }
 
   .prev,
@@ -373,7 +378,7 @@ div.dropdown-menu {
   }
 
   .slideshow-container {
-    max-width: 90%;
+    max-width: 100%;
     margin: auto;
   }
 }
